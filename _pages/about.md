@@ -22,7 +22,3 @@ USC Department of Economics, Kaprielian Hall Office 306C, 3620 S Vermont Ave, Lo
 {% for category in site.publication_category %}{% assign title_shown = false %}{% for post in site.publications reversed %}{% if post.category != category[0] %}{% continue %}{% endif %}{% unless title_shown %}
 <h3>{{ category[1].title }}</h3>
 {% assign title_shown = true %}{% endunless %}{% include archive-single.html %}{% endfor %}{% endfor %}
-
-<img src="{{ base_path }}/images/leviathan_bottom.jpg" alt="Detail from the frontispiece of Leviathan by Thomas Hobbes" style="width:100%; margin:2.5em 0 0.6em;">
-
-<p style="font-size:0.72em; color:#888; text-align:center; margin-top:0;">Image credit: part of the frontispiece of <em>Leviathan</em> by Thomas Hobbes; engraving by Abraham Bosse. &ldquo;The skill of making, and maintaining Common-wealths, consisteth in certain Rules, as doth Arithmetique and Geometry.&rdquo;</p>

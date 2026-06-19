@@ -232,3 +232,30 @@
     overflow-y: auto;
   }
 }
+
+/* Remove the residual grey bar behind the nav (greedy-nav/inner-wrap) */
+.site-header .greedy-nav,
+.site-header .masthead__inner-wrap,
+.site-header .masthead__menu { background: transparent; }
+
+/* Square photo frame instead of circle */
+.author__avatar img { border-radius: 0; }
+
+/* Frontispiece band in the footer (faint, like the header) */
+.footer-frontispiece { line-height: 0; margin: 0 0 1.2em; }
+.footer-frontispiece img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.18;
+}
+.footer-credit {
+  line-height: 1.45;
+  font-size: 0.72em;
+  color: #888;
+  text-align: center;
+  margin: 0.6em 0 0;
+}
