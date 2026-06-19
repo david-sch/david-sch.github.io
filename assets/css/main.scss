@@ -91,3 +91,13 @@
 .page__content .list__item {
   margin-bottom: 1.6em;
 }
+
+/* Supplementary links under each paper: tight bullet list */
+.page__content .archive__item ul {
+  margin: 0.3em 0 0;
+  padding-left: 1.4em;
+}
+.page__content .archive__item li {
+  font-size: $type-size-5;
+  margin-bottom: 0.15em;
+}
