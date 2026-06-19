@@ -4,5 +4,5 @@ collection: publications
 category: progress
 permalink: /publication/road-quality-streetview
 date: 2026-04-15
-excerpt: 'with Andrea Vallebueno'
+excerpt: 'with [Andrea Vallebueno](https://andreavalleai.com/about/)'
 ---

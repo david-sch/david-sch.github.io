@@ -4,5 +4,5 @@ collection: publications
 category: progress
 permalink: /publication/school-redistricting-housing
 date: 2026-03-15
-excerpt: 'with Tomas Monarrez'
+excerpt: 'with [Tomas Monarrez](https://sites.google.com/site/tmonarrez/)'
 ---
