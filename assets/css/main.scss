@@ -283,3 +283,23 @@
   margin-left: calc(50% - 50vw);
 }
 .footer-frontispiece img { height: 130px; }
+
+/* --- Tighter banners + flush footer + smaller header/content gap --- */
+
+/* Shorter header */
+.site-header { height: 100px; }
+
+/* Small, even gap below the header for both sidebar and content */
+#main { margin-top: 108px; }
+@media screen and (min-width: 1024px) {
+  .sidebar { top: 108px; height: calc(100vh - 108px); }
+}
+/* Drop the leading paragraph/heading margin so the text lines up with the avatar */
+.page__content > :first-child { margin-top: 0; }
+
+/* Footer banner flush (no grey above/below) + shorter */
+.page__footer { padding-top: 0; }
+.page__footer > footer { padding-top: 0; }
+.footer-frontispiece { margin: 0; }
+.footer-frontispiece img { height: 100px; }
+.footer-credit { margin: 0.5em 0 0; }
