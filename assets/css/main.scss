@@ -120,3 +120,21 @@
   max-width: $x-large;
   margin: 0 auto;
 }
+
+/* Banner: truly full-bleed + faint watermark feel */
+.site-banner img {
+  max-width: none;
+  width: 100%;
+  opacity: 0.15;
+}
+
+/* Sidebar back in normal flow (nav is no longer fixed) so the avatar
+   no longer floats up into the header band at the top of the page */
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    position: static;
+    height: auto;
+    overflow-y: visible;
+    padding-top: 0;
+  }
+}
