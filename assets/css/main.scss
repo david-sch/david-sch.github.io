@@ -337,3 +337,26 @@
   position: relative;
   z-index: 1;
 }
+
+/* Photo: drop the white frame and fill the sidebar (panel text) width */
+.author__avatar img {
+  border: none;
+  padding: 0;
+  max-width: 100%;
+}
+
+/* Content uses the centre + right of the page (wider, extends rightward) */
+@media screen and (min-width: 1024px) {
+  #main { max-width: 1450px; }
+  .sidebar { width: 200px; }
+  .page {
+    float: none;
+    width: auto;
+    margin-left: 240px;
+    margin-right: 0;
+    padding-right: 1.5em;
+  }
+}
+
+/* Footer frontispiece: frame the Leviathan's chest (top of the image) */
+.footer-frontispiece img { object-position: center top; }
