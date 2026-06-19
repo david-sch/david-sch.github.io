@@ -259,3 +259,27 @@
   text-align: center;
   margin: 0.6em 0 0;
 }
+
+/* --- Tuning: shorter banners, full-bleed footer, gap below fixed header --- */
+
+/* Shorter header band */
+.site-header { height: 120px; }
+
+/* Content clears the header with a ~20px gap */
+#main { margin-top: 140px; }
+
+/* Fixed sidebar: explicit top so the avatar also clears the header (was cutting in) */
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    top: 140px;
+    height: calc(100vh - 140px);
+  }
+}
+
+/* Footer frontispiece: full-bleed edge-to-edge + shorter */
+.page__footer { overflow-x: hidden; }
+.footer-frontispiece {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+.footer-frontispiece img { height: 130px; }
