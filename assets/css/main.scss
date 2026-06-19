@@ -415,3 +415,9 @@
   .sidebar { width: 260px; }
   .page { margin-left: 280px; }
 }
+
+/* Override the theme's 250px sidebar cap so the wider panel takes effect (USC one line) */
+@media screen and (min-width: 1024px) {
+  .sidebar { max-width: 300px; width: 270px; }
+  .page { margin-left: 290px; }
+}
