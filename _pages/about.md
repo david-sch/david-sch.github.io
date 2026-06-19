@@ -17,8 +17,6 @@ USC Department of Economics, Kaprielian Hall Office 306C, 3620 S Vermont Ave, Lo
 
 {% include base_path %}
 
-<img src="{{ base_path }}/images/leviathan_banner.jpg" alt="Detail from the frontispiece of Leviathan by Thomas Hobbes" style="width:100%; margin:1.8em 0;">
-
 <span id="research"></span>
 
 {% for category in site.publication_category %}{% assign title_shown = false %}{% for post in site.publications reversed %}{% if post.category != category[0] %}{% continue %}{% endif %}{% unless title_shown %}

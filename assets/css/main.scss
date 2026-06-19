@@ -101,3 +101,22 @@
   font-size: $type-size-5;
   margin-bottom: 0.15em;
 }
+
+/* ==========================================================================
+   Top banner band (Leviathan frontispiece) above the nav, site-wide
+   ========================================================================== */
+
+/* Nav in normal flow so the banner can sit above it at the very top */
+.masthead { position: relative; }
+
+.site-banner {
+  width: 100%;
+  text-align: center;
+  background: var(--global-bg-color);
+}
+.site-banner img {
+  display: block;
+  width: 100%;
+  max-width: $x-large;
+  margin: 0 auto;
+}
