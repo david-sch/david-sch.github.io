@@ -19,10 +19,6 @@ USC Department of Economics, Kaprielian Hall Office 306C, 3620 S Vermont Ave, Lo
 
 <h2 id="research" style="border-bottom: 2px solid #ddd; padding-bottom: 0.3em;">Research</h2>
 
-{% if site.author.googlescholar %}
-<p>You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</p>
-{% endif %}
-
 {% for category in site.publication_category %}
   {% assign title_shown = false %}
   {% for post in site.publications reversed %}
