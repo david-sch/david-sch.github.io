@@ -15,11 +15,12 @@ layout: compress
 
     {% include browser-upgrade.html %}
 
-    <div class="site-banner">
-      <a href="{{ base_path }}/"><img src="{{ base_path }}/images/leviathan_banner.jpg" alt="Detail from the frontispiece of Leviathan by Thomas Hobbes"></a>
+    <div class="site-header">
+      <div class="site-banner">
+        <img src="{{ base_path }}/images/leviathan_banner.jpg" alt="Detail from the frontispiece of Leviathan by Thomas Hobbes">
+      </div>
+      {% include masthead.html %}
     </div>
-
-    {% include masthead.html %}
 
     {{ content }}
 

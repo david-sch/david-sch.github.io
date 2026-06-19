@@ -138,3 +138,33 @@
     padding-top: 0;
   }
 }
+
+/* ==========================================================================
+   Header: nav overlaid directly on the banner image (no framing grey bars)
+   ========================================================================== */
+.site-header {
+  position: relative;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.site-banner { display: block; line-height: 0; background: transparent; }
+.site-banner img {
+  display: block;
+  width: 100%;
+  height: 160px;            /* fixed band; crops the image's blank margins */
+  object-fit: cover;
+  object-position: center;
+  max-width: none;
+  opacity: 0.18;
+}
+
+/* Nav floats on top of the image, transparent, anchored to the band's bottom */
+.site-header .masthead {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: transparent;
+}
+.site-header .masthead::after { display: none; }  /* drop the nav's own hairline */
