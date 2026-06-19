@@ -421,3 +421,11 @@
   .sidebar { max-width: 300px; width: 270px; }
   .page { margin-left: 290px; }
 }
+
+/* Photo fills the panel width (no dead space on its right) */
+.author__avatar img { width: 100%; }
+
+/* Photo-to-content gap = the photo's left margin (page padding) */
+@media screen and (min-width: 1024px) {
+  .page { margin-left: 286px; }
+}
