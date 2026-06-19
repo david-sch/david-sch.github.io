@@ -405,3 +405,13 @@
   content: counter(paper) ". ";
   font-weight: 700;
 }
+
+/* Left-justify the sidebar again (centering removed) */
+.sidebar { text-align: left; }
+.author__urls li { text-align: left; white-space: nowrap; }
+
+/* Wider panel so USC fits on one line; gap to content matches the photo's left inset */
+@media screen and (min-width: 1024px) {
+  .sidebar { width: 260px; }
+  .page { margin-left: 280px; }
+}
