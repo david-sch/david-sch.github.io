@@ -374,3 +374,34 @@
   padding: 0.9em 1.1em;
   margin-bottom: 1em;
 }
+
+/* --- Sidebar centering + wider panel + 1px frame --- */
+.sidebar { text-align: center; }
+.author__urls { padding-left: 0; margin-left: 0; }
+.author__urls li { text-align: center; }
+
+@media screen and (min-width: 1024px) {
+  .sidebar { width: 230px; }
+  .page { margin-left: 270px; }
+}
+
+/* Photo frame: 1px, matching the header's separating line */
+.author__avatar img {
+  border: 1px solid var(--global-border-color);
+  padding: 0;
+}
+
+/* Bigger photo on mobile (was a tiny 36px avatar) */
+@media screen and (max-width: 1023px) {
+  .author__avatar { display: block; width: auto; }
+  .author__avatar img { max-width: 200px; }
+}
+
+/* Number papers in Working Papers + Publications (not Research in Progress) */
+.pub-workingpapers, .pub-manuscripts { counter-reset: paper; }
+.pub-workingpapers .list__item, .pub-manuscripts .list__item { counter-increment: paper; }
+.pub-workingpapers .archive__item-title::before,
+.pub-manuscripts .archive__item-title::before {
+  content: counter(paper) ". ";
+  font-weight: 700;
+}
