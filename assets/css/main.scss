@@ -510,3 +510,40 @@
 /* Don't underline the title (white) when hovering anywhere in the card;
    only the link itself underlines (blue) on direct hover */
 .page__content .archive__item:hover .archive__item-title { text-decoration: none; }
+
+/* "See more" — expandable figure + abstract per paper */
+.see-more {
+  background: none;
+  border: none;
+  color: var(--global-link-color);
+  cursor: pointer;
+  padding: 0.45em 0 0;
+  font-size: 0.95em;
+  font-family: inherit;
+}
+.see-more:hover { text-decoration: underline; }
+.see-more-arrow { font-size: 0.85em; }
+
+.paper-expand {
+  display: flex;
+  gap: 1.3em;
+  align-items: flex-start;
+  margin-top: 0.7em;
+}
+.paper-expand[hidden] { display: none; }
+.paper-figure {
+  flex: 0 0 44%;
+  max-width: 44%;
+  height: auto;
+  border: 1px solid var(--global-border-color);
+  background: #fff;
+  padding: 6px;
+  box-sizing: border-box;
+}
+.paper-abstract { flex: 1 1 auto; font-size: 0.95em; }
+.paper-abstract p { margin-top: 0; }
+
+@media screen and (max-width: 800px) {
+  .paper-expand { flex-direction: column; }
+  .paper-figure { flex-basis: auto; max-width: 100%; }
+}

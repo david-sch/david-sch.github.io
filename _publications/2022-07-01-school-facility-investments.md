@@ -10,4 +10,7 @@ excerpt: 'with [Julien Lafortune](https://www.ppic.org/person/julien-lafortune/)
 supplement: |
   - [Online appendix and replication package](https://www.aeaweb.org/articles?id=10.1257/app.20200467)
 link: "https://www.dropbox.com/s/yq5cycr91z0afhv/Lafortune_Schonholzer_2022.pdf?dl=0"
+figure: /images/papers/school-facility.png
 ---
+
+We study school facility investments using administrative records from Los Angeles. Exploiting quasi-random variation in the timing of new facility openings and using a residential assignment instrument, we find positive impacts on test scores, attendance, and house prices. Effects are not driven by changes in class size, peers, teachers, or principals, but some evidence points toward increased facility quality. We evaluate program efficiency using implied future earnings and housing capitalization. For each dollar spent, the program generated $1.62 in household value, with about 24 percent coming directly through test score gains and 76 percent from capitalization of non-test-score amenities.

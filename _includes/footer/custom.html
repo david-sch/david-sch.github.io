@@ -32,4 +32,27 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
+<!-- "See more" expand/collapse for paper cards -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.see-more').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var panel = btn.nextElementSibling;
+      var arrow = btn.querySelector('.see-more-arrow');
+      if (panel.hasAttribute('hidden')) {
+        panel.removeAttribute('hidden');
+        btn.setAttribute('aria-expanded', 'true');
+        btn.childNodes[0].nodeValue = 'See less ';
+        if (arrow) arrow.innerHTML = '&#9652;';
+      } else {
+        panel.setAttribute('hidden', '');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.childNodes[0].nodeValue = 'See more ';
+        if (arrow) arrow.innerHTML = '&#9662;';
+      }
+    });
+  });
+});
+</script>
+
 <!-- end custom footer snippets -->

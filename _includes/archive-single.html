@@ -57,7 +57,15 @@
     {% if post.supplement %}
     <div class="archive__item-supplement">{{ post.supplement | markdownify }}</div>
     {% endif %}
-    
+
+    {% if post.figure %}
+    <button type="button" class="see-more" aria-expanded="false">See more <span class="see-more-arrow">&#9662;</span></button>
+    <div class="paper-expand" hidden>
+      <img class="paper-figure" src="{{ post.figure | relative_url }}" alt="Figure from {{ title }}" loading="lazy">
+      <div class="paper-abstract">{{ post.content }}</div>
+    </div>
+    {% endif %}
+
     {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.citation and post.paperurl and post.slidesurl %}
