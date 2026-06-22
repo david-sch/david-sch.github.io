@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/school-capital-rules
 date: 2021-05-01
 published: true
-venue: "AEA Papers & Proceedings, 111, 450–454"
+venue: "**AEA Papers & Proceedings**, 111, 450–454"
 excerpt: 'with [Barbara Biasi](https://www.barbarabiasi.com/) and [Julien Lafortune](https://www.ppic.org/person/julien-lafortune/)'
 link: "https://www.dropbox.com/s/47ezp1xa0ajqtg1/Biasi_etal_2021.pdf?dl=0"
 ---

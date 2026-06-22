@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/school-facility-investments
 date: 2022-07-01
 published: true
-venue: "American Economic Journal: Applied Economics, 14(3), 254–289"
+venue: "**American Economic Journal: Applied Economics**, 14(3), 254–289"
 excerpt: 'with [Julien Lafortune](https://www.ppic.org/person/julien-lafortune/)'
 supplement: |
   - [Online appendix and replication package](https://www.aeaweb.org/articles?id=10.1257/app.20200467)

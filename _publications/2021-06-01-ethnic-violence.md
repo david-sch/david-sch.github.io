@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/ethnic-violence
 date: 2021-06-01
 published: true
-venue: "The Economic Journal, 132, 709–740"
+venue: "**The Economic Journal**, 132, 709–740"
 excerpt: 'with [Hannes Mueller](https://www.hannesfelixmueller.com/) and [Dominic Rohner](https://sites.google.com/site/dprohner/)'
 supplement: |
   - [Replication package](https://zenodo.org/record/4816110)

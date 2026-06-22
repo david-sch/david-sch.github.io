@@ -4,7 +4,7 @@ collection: publications
 category: workingpapers
 permalink: /publication/environmental-circumscription
 date: 2026-05-01
-status: "Resubmitted to the Review of Economic Studies"
+status: "Resubmitted to the **Review of Economic Studies**"
 excerpt: 'with [Pieter François](https://www.anthro.ox.ac.uk/people/dr-pieter-francois)'
 supplement: |
   - Shapefile of archaeological sites in the Atlas of World Archaeology [available here](https://www.dropbox.com/s/n007qiqbv0ij6ad/AtlasOfWorldArchaeology_230729.zip?dl=0)

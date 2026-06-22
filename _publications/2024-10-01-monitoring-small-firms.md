@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/monitoring-small-firms
 date: 2024-10-01
 published: true
-venue: "American Economic Review, 114(10), 3119–3160"
+venue: "**American Economic Review**, 114(10), 3119–3160"
 excerpt: 'with [Erin Kelley](https://www.erinmunrokelley.com/) and [Gregory Lane](http://www.gregoryvlane.com/)'
 supplement: |
   - [Online appendix](https://www.dropbox.com/scl/fi/3j5rg5mfl5btncj3ahu11/matatu_final_aer_onlineappendix.pdf?rlkey=1bfoxyv8u5p9of7j6youreiol&dl=0)

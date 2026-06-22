@@ -506,3 +506,7 @@
 /* Paper titles: only the link (blue) underlines on hover — not the whole h2 (white)
    when hovering near the text */
 .page__content .archive__item-title:hover { text-decoration: none; }
+
+/* Don't underline the title (white) when hovering anywhere in the card;
+   only the link itself underlines (blue) on direct hover */
+.page__content .archive__item:hover .archive__item-title { text-decoration: none; }

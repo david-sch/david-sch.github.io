@@ -4,7 +4,7 @@ collection: publications
 category: workingpapers
 permalink: /publication/creative-destruction-europe
 date: 2026-01-15
-status: "Resubmitted to the Review of Economic Studies"
+status: "Resubmitted to the **Review of Economic Studies**"
 excerpt: 'with [Eric Weese](http://www.econ.kobe-u.ac.jp/en/people/course/technology/weese.html)'
 supplement: |
   - Data from [Centennia Research Edition](http://historicalatlas.com/CRE/)

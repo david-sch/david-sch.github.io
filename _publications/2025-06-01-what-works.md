@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/what-works
 date: 2025-06-01
 published: true
-venue: "Quarterly Journal of Economics, 140(3), 2329–2379"
+venue: "**Quarterly Journal of Economics**, 140(3), 2329–2379"
 excerpt: 'with [Barbara Biasi](https://www.barbarabiasi.com/) and [Julien Lafortune](https://www.ppic.org/person/julien-lafortune/)'
 supplement: |
   - [Online appendix](https://www.barbarabiasi.com/uploads/1/0/1/2/101280322/bilaschon_appendix_241216.pdf)
