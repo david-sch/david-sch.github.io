@@ -448,3 +448,29 @@
     margin-top: 0.75em;
   }
 }
+
+/* Hide the name under the photo (it's already in the header bar) */
+.author__name { display: none; }
+
+/* Small gap between the photo and the text below it */
+.author__avatar { margin-bottom: 0.75em; }
+
+/* Desktop: slightly smaller, centered photo (margins stay balanced) */
+@media screen and (min-width: 1024px) {
+  .author__avatar img {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile: cap the photo at 320px, centered */
+@media screen and (max-width: 1023px) {
+  .author__avatar { text-align: center; }
+  .author__avatar img {
+    width: 100%;
+    max-width: 320px;
+    display: block;
+    margin: 0 auto;
+  }
+}
