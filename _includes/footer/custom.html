@@ -43,12 +43,12 @@ document.addEventListener('DOMContentLoaded', function () {
         panel.removeAttribute('hidden');
         btn.setAttribute('aria-expanded', 'true');
         btn.childNodes[0].nodeValue = 'See less ';
-        if (arrow) arrow.innerHTML = '&#9652;';
+        if (arrow) arrow.innerHTML = '&#708;';
       } else {
         panel.setAttribute('hidden', '');
         btn.setAttribute('aria-expanded', 'false');
         btn.childNodes[0].nodeValue = 'See more ';
-        if (arrow) arrow.innerHTML = '&#9662;';
+        if (arrow) arrow.innerHTML = '&#709;';
       }
     });
   });

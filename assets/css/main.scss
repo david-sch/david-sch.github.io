@@ -547,3 +547,33 @@
   .paper-expand { flex-direction: column; }
   .paper-figure { flex-basis: auto; max-width: 100%; }
 }
+
+/* See-more refinements: figure column + note, framed abstract, baseline arrow */
+.see-more-arrow { font-size: 1em; vertical-align: baseline; }
+
+.paper-figcol { flex: 0 0 44%; max-width: 44%; }
+.paper-figcol .paper-figure {
+  flex: none;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+.figure-note {
+  font-size: 0.8em;
+  line-height: 1.45;
+  margin: 0.55em 0 0;
+}
+
+/* White frame around the abstract */
+.paper-abstract {
+  border: 1px solid var(--global-border-color);
+  padding: 0.85em 1.05em;
+}
+
+@media screen and (max-width: 800px) {
+  .paper-figcol { flex-basis: auto; max-width: 100%; }
+}
+
+/* abstract column wrapper (so the note can sit outside the framed abstract) */
+.paper-abstract-col { flex: 1 1 auto; min-width: 0; }
+.paper-abstract-col .paper-abstract { flex: none; }

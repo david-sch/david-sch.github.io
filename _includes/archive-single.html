@@ -59,10 +59,16 @@
     {% endif %}
 
     {% if post.figure %}
-    <button type="button" class="see-more" aria-expanded="false">See more <span class="see-more-arrow">&#9662;</span></button>
+    <button type="button" class="see-more" aria-expanded="false">See more <span class="see-more-arrow">&#709;</span></button>
     <div class="paper-expand" hidden>
-      <img class="paper-figure" src="{{ post.figure | relative_url }}" alt="Figure from {{ title }}" loading="lazy">
-      <div class="paper-abstract">{{ post.content }}</div>
+      <div class="paper-figcol">
+        <img class="paper-figure" src="{{ post.figure | relative_url }}" alt="Figure from {{ title }}" loading="lazy">
+        {% if post.note and post.note_col != 'abs' %}<p class="figure-note"><strong><em>Note:</em></strong> <em>{{ post.note }}</em></p>{% endif %}
+      </div>
+      <div class="paper-abstract-col">
+        <div class="paper-abstract">{{ post.content }}</div>
+        {% if post.note and post.note_col == 'abs' %}<p class="figure-note"><strong><em>Note:</em></strong> <em>{{ post.note }}</em></p>{% endif %}
+      </div>
     </div>
     {% endif %}
 

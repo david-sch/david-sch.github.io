@@ -12,6 +12,7 @@ supplement: |
   - [Replication package](https://www.openicpsr.org/openicpsr/project/202063/version/V1/view)
 link: "https://www.dropbox.com/scl/fi/hyxkjevicim9edukwn8m8/Kelley_etal_2024.pdf?rlkey=yukl0ws9v1j3l3vuhy4ett7oa&dl=0"
 figure: /images/papers/monitoring.png
+note: "The top panel plots the estimated incentive-transfer schedule against revenue and the bottom the reduced-form rise in owner satisfaction; together they show the monitoring-and-incentive scheme realigns drivers' behavior with owners' interests."
 ---
 
 Small firms struggle to grow beyond a few employees. We introduce monitoring devices into commuter minibuses in Kenya and randomize which minibus owners have access to the data using a novel mobile app. We find that treated vehicle owners modify the terms of the contract to induce higher effort and lower risk taking from their drivers. This reduces firm costs and increases firm profitability. There is suggestive evidence that some firms expand. These results suggest that small firms may be able to utilize monitoring technologies to overcome problems of moral hazard and enhance their profitability.
