@@ -46,7 +46,7 @@
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
           {% if post.published and post.venue %}
-            <p><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+            <p><strong>{{ post.venue }}</strong>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
           {% elsif post.status %}
             <p><i>{{ post.status }}</i></p>
           {% endif %}

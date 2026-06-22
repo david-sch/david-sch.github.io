@@ -499,3 +499,10 @@
 /* Bigger header-bar font, ~matching the section titles */
 .site-header .masthead__menu-item a { font-size: 1.4em; }
 .site-header .masthead__menu-item--lg a { font-size: 1.7em; }
+
+/* Footer credit/quote: brighter so it's readable over the faint engraving */
+.footer-credit { color: #bdbdbd; }
+
+/* Paper titles: only the link (blue) underlines on hover — not the whole h2 (white)
+   when hovering near the text */
+.page__content .archive__item-title:hover { text-decoration: none; }
