@@ -429,3 +429,22 @@
 @media screen and (min-width: 1024px) {
   .page { margin-left: 286px; }
 }
+
+/* Mobile: stack the author block — full-width photo, then name/title, then Follow */
+@media screen and (max-width: 1023px) {
+  .author__avatar,
+  .author__content,
+  .author__urls-wrapper {
+    display: block;
+    width: auto;
+  }
+  .author__avatar img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .author__content { padding-left: 0; }
+  .author__urls-wrapper {
+    padding-left: 0;
+    margin-top: 0.75em;
+  }
+}
