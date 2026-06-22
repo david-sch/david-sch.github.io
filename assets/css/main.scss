@@ -474,3 +474,21 @@
     margin: 0 auto;
   }
 }
+
+/* Photo: never upscale — show at natural size (or smaller), centered */
+.author__avatar img {
+  width: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Bio line (the sidebar title now) at least body size */
+.author__bio { font-size: 1em; }
+
+/* Desktop: taller header so the engraving's eyes aren't cut off */
+@media screen and (min-width: 1024px) {
+  .site-header { height: 110px; }
+  #main { margin-top: 116px; }
+  .sidebar { top: 116px; height: calc(100vh - 116px); }
+}
