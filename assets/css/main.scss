@@ -492,3 +492,10 @@
   #main { margin-top: 116px; }
   .sidebar { top: 116px; height: calc(100vh - 116px); }
 }
+
+/* Nudge the header engraving crop up so the king's eyes aren't cut off */
+.site-banner img { object-position: center 30%; }
+
+/* Bigger header-bar font, ~matching the section titles */
+.site-header .masthead__menu-item a { font-size: 1.4em; }
+.site-header .masthead__menu-item--lg a { font-size: 1.7em; }
