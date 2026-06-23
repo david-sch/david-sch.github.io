@@ -686,3 +686,7 @@ html[data-theme="dark"]         { --frame-color: #c4c4c4; }
 .usc-seal-link { display: block; text-align: center; margin-top: 1.6em; }
 .usc-seal { width: 96px; height: auto; opacity: 0.9; }
 html[data-theme="dark"] .usc-seal { filter: invert(1); }
+
+/* Subtle frames: just a touch off the background in each mode */
+:root, html[data-theme="light"] { --frame-color: #e6e6e6; }  /* touch darker than white */
+html[data-theme="dark"]         { --frame-color: #5a5a5a; }  /* touch brighter than #474747 */
