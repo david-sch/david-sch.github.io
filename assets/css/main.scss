@@ -595,3 +595,16 @@
 
 /* Figure note: smaller */
 .figure-note { font-size: 0.72em; }
+
+/* Lightened USC Cardinal in dark mode (readable on the dark grey) */
+html[data-theme="dark"] {
+  --global-link-color: #e06666;
+  --global-link-color-hover: #ec8a8a;
+  --global-link-color-visited: #e06666;
+}
+
+/* Header and footer bar text in USC Gold */
+.site-header .masthead a { color: #FFCC00; }
+.page__footer,
+.page__footer a,
+.footer-credit { color: #FFCC00; }
