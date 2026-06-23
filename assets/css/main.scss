@@ -608,3 +608,11 @@ html[data-theme="dark"] {
 .page__footer,
 .page__footer a,
 .footer-credit { color: #FFCC00; }
+
+/* Figure frame: thin 2px gold line matching the photo (not a thick mat) */
+.paper-figure {
+  background: none;
+  border: 2px solid #FFCC00;
+  padding: 0;
+  border-radius: 12px;
+}
