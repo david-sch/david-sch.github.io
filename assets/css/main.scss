@@ -690,3 +690,25 @@ html[data-theme="dark"] .usc-seal { filter: invert(1); }
 /* Subtle frames: just a touch off the background in each mode */
 :root, html[data-theme="light"] { --frame-color: #e6e6e6; }  /* touch darker than white */
 html[data-theme="dark"]         { --frame-color: #5a5a5a; }  /* touch brighter than #474747 */
+
+/* USC seal in the header bar, left of the name (small, ~name height) */
+.usc-seal-header {
+  height: 0.8em;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 0.4em;
+}
+html[data-theme="dark"] .usc-seal-header { filter: invert(1); }
+
+/* Abstract box background = main page background (not the card tint) */
+.paper-abstract { background: var(--global-bg-color); }
+
+/* Tighter gap between the fixed header and the content/sidebar */
+@media screen and (min-width: 1024px) {
+  #main { margin-top: 112px; }
+  .sidebar { top: 112px; height: calc(100vh - 112px); }
+}
+
+/* All fonts a bit smaller */
+html { font-size: 15px; }
+@media (min-width: 48em) { html { font-size: 16px; } }
