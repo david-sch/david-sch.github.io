@@ -74,8 +74,8 @@
       {% if pdf_url or post.htmlurl or post.briefurl %}
       <p class="paper-links">
         {% if pdf_url %}<a href="{{ pdf_url }}">PDF</a>{% assign sep = true %}{% endif %}
-        {% if post.htmlurl %}{% if sep %}<span class="paper-links-dot">&middot;</span>{% endif %}<a href="{{ post.htmlurl | relative_url }}">HTML</a>{% assign sep = true %}{% endif %}
-        {% if post.briefurl %}{% if sep %}<span class="paper-links-dot">&middot;</span>{% endif %}<a href="{{ post.briefurl | relative_url }}">Policy brief</a>{% endif %}
+        {% if post.htmlurl %}{% if sep %}<span class="paper-links-dot">&bull;</span>{% endif %}<a href="{{ post.htmlurl | relative_url }}">HTML</a>{% assign sep = true %}{% endif %}
+        {% if post.briefurl %}{% if sep %}<span class="paper-links-dot">&bull;</span>{% endif %}<a href="{{ post.briefurl | relative_url }}">Policy brief</a>{% endif %}
       </p>
       {% endif %}
     </div>
