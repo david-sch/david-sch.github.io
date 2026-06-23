@@ -691,14 +691,18 @@ html[data-theme="dark"] .usc-seal { filter: invert(1); }
 :root, html[data-theme="light"] { --frame-color: #e6e6e6; }  /* touch darker than white */
 html[data-theme="dark"]         { --frame-color: #5a5a5a; }  /* touch brighter than #474747 */
 
-/* USC seal in the header bar, left of the name (small, ~name height) */
+/* USC seal in the header bar, left of the name; recolored via CSS mask */
 .usc-seal-header {
-  height: 0.8em;
-  width: auto;
+  display: inline-block;
+  height: 1.6em;
+  width: 1.6em;
   vertical-align: middle;
-  margin-right: 0.4em;
+  margin-right: 0.45em;
+  -webkit-mask: url('/images/usc-seal.png') center / contain no-repeat;
+          mask: url('/images/usc-seal.png') center / contain no-repeat;
 }
-html[data-theme="dark"] .usc-seal-header { filter: invert(1); }
+html[data-theme="light"] .usc-seal-header { background-color: #990000; }
+html[data-theme="dark"]  .usc-seal-header { background-color: #FFCC00; }
 
 /* Abstract box background = main page background (not the card tint) */
 .paper-abstract { background: var(--global-bg-color); }
@@ -712,3 +716,8 @@ html[data-theme="dark"] .usc-seal-header { filter: invert(1); }
 /* All fonts a bit smaller */
 html { font-size: 15px; }
 @media (min-width: 48em) { html { font-size: 16px; } }
+
+/* Card sits a touch off the page bg; abstract box returns to the page bg.
+   Light: card slightly darker than white. Dark: card slightly brighter than #474747. */
+html[data-theme="light"] .page__content .list__item { background: #f0f0f0; }
+html[data-theme="dark"]  .page__content .list__item { background: #555555; }
