@@ -653,3 +653,19 @@ h1, h2, h3, h4, h5, h6,
 .site-header .masthead__menu-item--lg a {
   font-family: "Libre Caslon Text", Georgia, serif;
 }
+
+/* ==========================================================================
+   Recolor:
+   - light mode: frame edges -> light-medium gray (was gold); bar text stays cardinal
+   - dark mode:  frame edges -> off-white (was dark cardinal); links -> USC Gold
+                 (was light cardinal); bar text stays gold
+   ========================================================================== */
+:root, html[data-theme="light"] {
+  --frame-color: #a8a8a8;
+}
+html[data-theme="dark"] {
+  --frame-color: #f0f0f0;
+  --global-link-color: #FFCC00;
+  --global-link-color-hover: #ffd84d;
+  --global-link-color-visited: #FFCC00;
+}
