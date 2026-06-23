@@ -66,7 +66,7 @@
         {% if post.note and post.note_col != 'abs' %}<p class="figure-note"><strong><em>Note:</em></strong> <em>{{ post.note }}</em></p>{% endif %}
       </div>
       <div class="paper-abstract-col">
-        <div class="paper-abstract">{{ post.content }}</div>
+        <div class="paper-abstract"><p><strong>Abstract:</strong> {{ post.content | remove: '<p>' | remove: '</p>' | strip_newlines }}</p></div>
         {% if post.note and post.note_col == 'abs' %}<p class="figure-note"><strong><em>Note:</em></strong> <em>{{ post.note }}</em></p>{% endif %}
       </div>
     </div>

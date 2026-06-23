@@ -577,3 +577,21 @@
 /* abstract column wrapper (so the note can sit outside the framed abstract) */
 .paper-abstract-col { flex: 1 1 auto; min-width: 0; }
 .paper-abstract-col .paper-abstract { flex: none; }
+
+/* ==========================================================================
+   USC color scheme (experimental) + rounded corners
+   ========================================================================== */
+:root, html[data-theme="dark"], html[data-theme="light"] {
+  --global-link-color: #990000;          /* USC Cardinal */
+  --global-link-color-hover: #c0392b;
+  --global-link-color-visited: #990000;
+}
+
+/* USC Gold (#FFCC00) frames instead of white, with rounded corners */
+.author__avatar img { border: 2px solid #FFCC00; border-radius: 12px; }
+.page__content .list__item { border: 1px solid #FFCC00; border-radius: 12px; }
+.paper-abstract { border: 1px solid #FFCC00; border-radius: 10px; }
+.paper-figure { background: #FFCC00; border: none; border-radius: 10px; }
+
+/* Figure note: smaller */
+.figure-note { font-size: 0.72em; }
