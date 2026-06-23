@@ -695,14 +695,14 @@ html[data-theme="dark"]         { --frame-color: #5a5a5a; }  /* touch brighter t
 .usc-seal-emblem {
   display: block;
   float: right;
-  width: 120px;
-  height: 124px;
+  width: 204px;
+  height: 210px;
   margin: 0.2em 0 0.6em 1.4em;
+  background-color: #990000;   /* light/default (no data-theme attr): cardinal */
   -webkit-mask: url('/images/usc-seal.png') center / contain no-repeat;
           mask: url('/images/usc-seal.png') center / contain no-repeat;
 }
-html[data-theme="light"] .usc-seal-emblem { background-color: #990000; }
-html[data-theme="dark"]  .usc-seal-emblem { background-color: #FFCC00; }
+html[data-theme="dark"] .usc-seal-emblem { background-color: #FFCC00; }
 
 /* Abstract box background = main page background (not the card tint) */
 .paper-abstract { background: var(--global-bg-color); }
@@ -717,12 +717,13 @@ html[data-theme="dark"]  .usc-seal-emblem { background-color: #FFCC00; }
 html { font-size: 14px; }
 @media (min-width: 48em) { html { font-size: 16px; } }
 
-/* Desktop left panel (sidebar) nudged back up a bit */
+/* Desktop left panel (sidebar) nudged back up a bit (target elements directly) */
 @media screen and (min-width: 1024px) {
-  .sidebar { font-size: 1.1em; }
+  .sidebar .author__name { font-size: 1.3em; }
+  .sidebar .author__urls a { font-size: 1.12em; }
 }
 
 /* Card sits a touch off the page bg; abstract box returns to the page bg.
    Light: card slightly darker than white. Dark: card slightly brighter than #474747. */
-html[data-theme="light"] .page__content .list__item { background: #f0f0f0; }
-html[data-theme="dark"]  .page__content .list__item { background: #555555; }
+.page__content .list__item { background: #f0f0f0; }                          /* light/default */
+html[data-theme="dark"] .page__content .list__item { background: #555555; }  /* dark */
