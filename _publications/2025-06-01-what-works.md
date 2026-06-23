@@ -13,7 +13,7 @@ supplement: |
   - Media coverage: [EducationWeek](https://www.edweek.org/leadership/these-school-building-improvements-are-most-likely-to-boost-test-scores/2023/10), [FutureEd](https://www.future-ed.org/qa-biasi-on-new-insights-into-school-spending-and-student-outcomes/), [Yale Insights](https://insights.som.yale.edu/insights/does-capital-spending-on-schools-improve-education)
 link: "https://www.dropbox.com/scl/fi/gvqxuczz877ks0lpowjlc/Biasi_etal_2025.pdf?rlkey=g28rokh9wlq656pt7inxelqhc&dl=0"
 figure: /images/papers/what-works.png
-note: "The event studies trace the effect of passing a school bond on test scores (top) and house prices (bottom) by year since passage; both rise after authorization, the paper's headline finding that capital investment raises outcomes and is capitalized into home values."
+note: "Each pair of bars gives the estimated effect of bond-funded spending in a given category on student test scores (tan, left axis) and on local house prices (blue, right axis). Most categories raise both, the paper's finding that the returns to school capital are broad-based across types of investment rather than driven by any single one."
 note_col: abs
 ---
 

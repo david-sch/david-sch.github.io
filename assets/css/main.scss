@@ -717,10 +717,10 @@ html[data-theme="dark"] .usc-seal-emblem { background-color: #FFCC00; }
 html { font-size: 14px; }
 @media (min-width: 48em) { html { font-size: 16px; } }
 
-/* Desktop left panel (sidebar) nudged back up a bit (target elements directly) */
+/* Desktop left panel (sidebar) under the photo — clearly larger */
 @media screen and (min-width: 1024px) {
-  .sidebar .author__name { font-size: 1.3em; }
-  .sidebar .author__urls a { font-size: 1.12em; }
+  .sidebar .author__urls a { font-size: 1.3em; }
+  .sidebar .author__bio { font-size: 1.15em; }
 }
 
 /* Card sits a touch off the page bg; abstract box returns to the page bg.
