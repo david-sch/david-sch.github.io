@@ -6,6 +6,7 @@ permalink: /publication/lemon-markets
 date: 2026-01-01
 excerpt: 'with [Erin Kelley](https://www.erinmunrokelley.com/) and [Gregory Lane](http://www.gregoryvlane.com/)'
 link: "https://www.dropbox.com/scl/fi/sxr1cxqyv5xk9vzxtlsq2/matatu_safety.pdf?rlkey=j5ncbdw1o1kc6sqqacasl8efj&dl=0"
+htmlurl: /papers/lemon-markets.html
 figure: /images/papers/lemon-markets.png
 note: "The figure reproduces the safety-information card shown to passengers, the paper's core intervention: it discloses each route's safety record to riders to shift demand toward safer operators."
 note_col: abs

@@ -10,6 +10,7 @@ supplement: |
   - Data from [Centennia Research Edition](http://historicalatlas.com/CRE/)
   - Media coverage: [Works in Progress](https://worksinprogress.co/issue/the-entrepreneurial-state/)
 link: "https://www.dropbox.com/scl/fi/od4sk2bil8nakeh8tyxoa/europe_draft_revision.pdf?rlkey=fm007cxw6jg9kow5s3hrpt53n&dl=0"
+htmlurl: /papers/creative-destruction-europe.html
 figure: /images/papers/europe.png
 note: "The map plots European cities by the average number of sovereign changes per century over 1000 to 2000, scaled by population; this churn in control is the creative-destruction process the paper models."
 ---

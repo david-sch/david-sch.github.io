@@ -11,6 +11,7 @@ supplement: |
   - Additional data from [Seshat: Global History Databank](https://seshat-db.com/)
   - Technical note on [Estimating Agricultural Productivity in Ancient Times](https://www.dropbox.com/scl/fi/5n3yvh0vnyxcvz55fb6z6/OOS_methnote.pdf?rlkey=15s994gi32430ghbgo5qhfpin&dl=0) using [GAEZ proxy data](https://www.dropbox.com/scl/fi/utqmmy79qptaq7iy5nrab/GAEZ_ancient_productivity.zip?dl=0)
 link: "https://www.dropbox.com/scl/fi/ebbkdlfu6addn1yz3eoqs/OOS_revision.pdf?rlkey=2ywykfiinju5maj20foc1ymgk&dl=0"
+htmlurl: /papers/environmental-circumscription.html
 figure: /images/papers/oos.png
 note: "The maps locate early state sites (triangles) and pre-state sites (dots) across six cradles of civilization, shaded by agricultural productivity; state sites cluster in productive zones ringed by unproductive land, the environmental circumscription the paper argues drives state formation."
 ---
