@@ -641,3 +641,15 @@ html[data-theme="dark"] {
 
 /* Figure note: smaller still */
 .figure-note { font-size: 0.64em; }
+
+/* ==========================================================================
+   USC-style typography: Archivo (body) + Libre Caslon Text (headings)
+   ========================================================================== */
+html, body {
+  font-family: "Archivo", -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6,
+.archive__item-title,
+.site-header .masthead__menu-item--lg a {
+  font-family: "Libre Caslon Text", Georgia, serif;
+}
