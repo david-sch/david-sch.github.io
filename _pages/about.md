@@ -8,7 +8,7 @@ redirect_from:
   - /publications.html
 ---
 
-I study how public goods such as schools, roads, public safety, or public transit can be provided efficiently. I also investigate how states evolved to provide these services.
+<span class="usc-seal-emblem" role="img" aria-label="University of Southern California seal"></span>I study how public goods such as schools, roads, public safety, or public transit can be provided efficiently. I also investigate how states evolved to provide these services.
 
 My work lies primarily in public economics and political economy, with further interests in development, urban, and history. I frequently combine big spatial data with both reduced-form and structural microeconomic methods.
 
