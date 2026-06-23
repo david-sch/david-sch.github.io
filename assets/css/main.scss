@@ -669,3 +669,20 @@ html[data-theme="dark"] {
   --global-link-color-hover: #ffd84d;
   --global-link-color-visited: #FFCC00;
 }
+
+/* --- Frame + note + header-font fixes --- */
+/* brighter gray frames (light); softer, less-bright frames (dark) */
+:root, html[data-theme="light"] { --frame-color: #bdbdbd; }
+html[data-theme="dark"]         { --frame-color: #c4c4c4; }
+/* photo + figure to 1px, matching the paper/abstract boxes */
+.author__avatar img { border-width: 1px; }
+.paper-figure { border-width: 1px; }
+/* figure note must beat '.page__content .archive__item p {font-size:1em}', so it reads smaller than the abstract */
+.page__content .archive__item p.figure-note { font-size: 0.72em; }
+/* header nav links (Research/Teaching/CV) in the same Caslon as the name */
+.site-header .masthead a { font-family: "Libre Caslon Text", Georgia, serif; }
+
+/* USC seal at the bottom of the sidebar */
+.usc-seal-link { display: block; text-align: center; margin-top: 1.6em; }
+.usc-seal { width: 96px; height: auto; opacity: 0.9; }
+html[data-theme="dark"] .usc-seal { filter: invert(1); }
