@@ -70,6 +70,7 @@
           <div class="paper-abstract">{{ post.content }}</div>
         </div>
       </div>
+      {% unless post.category == 'progress' %}
       {% assign pdf_url = post.paperurl | default: post.link %}
       {% if pdf_url or post.htmlurl or post.briefurl %}
       <p class="paper-links">
@@ -78,6 +79,7 @@
         {% if post.briefurl %}{% if sep %}<span class="paper-links-dot">&bull;</span>{% endif %}<a href="{{ post.briefurl | relative_url }}">Policy brief</a>{% endif %}
       </p>
       {% endif %}
+      {% endunless %}
     </div>
     {% endif %}
 
