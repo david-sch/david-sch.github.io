@@ -717,10 +717,12 @@ html[data-theme="dark"] .usc-seal-emblem { background-color: #FFCC00; }
 html { font-size: 14px; }
 @media (min-width: 48em) { html { font-size: 16px; } }
 
-/* Desktop left panel (sidebar) under the photo — clearly larger */
+/* Desktop left panel (sidebar) under the photo — clearly larger.
+   Target the li (so the non-link "Los Angeles, CA" matches the links); a inherits. */
 @media screen and (min-width: 1024px) {
-  .sidebar .author__urls a { font-size: 1.3em; }
-  .sidebar .author__bio { font-size: 1.15em; }
+  .sidebar .author__urls li { font-size: 1.3em; }
+  .sidebar .author__urls a { font-size: inherit; }
+  .sidebar .author__bio { font-size: 1.05em; }
 }
 
 /* Card sits a touch off the page bg; abstract box returns to the page bg.
@@ -737,6 +739,6 @@ html[data-theme="dark"] .page__content .list__item { background: #555555; }  /* 
 .paper-links {
   margin: 0;
   font-size: 0.95em;
-  font-weight: 600;
+  font-weight: 400;
 }
-.paper-links-dot { color: var(--frame-color); margin: 0 0.5em; font-weight: 400; }
+.paper-links-dot { color: #999; margin: 0 0.5em; font-weight: 400; }
