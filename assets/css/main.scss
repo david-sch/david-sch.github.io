@@ -707,10 +707,11 @@ html[data-theme="dark"] .usc-seal-emblem { background-color: #FFCC00; }
 /* Abstract box background = main page background (not the card tint) */
 .paper-abstract { background: var(--global-bg-color); }
 
-/* Tighter gap between the fixed header and the content/sidebar */
+/* Equalize the gap under the fixed header: photo (hard edge) sits a touch lower,
+   intro text (which has ~10px line-box leading) sits a touch higher, meeting ~8px. */
 @media screen and (min-width: 1024px) {
-  #main { margin-top: 112px; }
-  .sidebar { top: 112px; height: calc(100vh - 112px); }
+  #main { margin-top: 108px; }
+  .sidebar { top: 118px; height: calc(100vh - 118px); }
 }
 
 /* All fonts a bit smaller (mobile a touch smaller still) */
