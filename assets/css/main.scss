@@ -717,10 +717,10 @@ html[data-theme="dark"] .usc-seal-emblem { background-color: #FFCC00; }
 html { font-size: 14px; }
 @media (min-width: 48em) { html { font-size: 16px; } }
 
-/* Desktop left panel (sidebar) under the photo — clearly larger.
+/* Desktop left panel (sidebar) under the photo: links match the title size.
    Target the li (so the non-link "Los Angeles, CA" matches the links); a inherits. */
 @media screen and (min-width: 1024px) {
-  .sidebar .author__urls li { font-size: 1.3em; }
+  .sidebar .author__urls li { font-size: 1.05em; }
   .sidebar .author__urls a { font-size: inherit; }
   .sidebar .author__bio { font-size: 1.05em; }
 }
