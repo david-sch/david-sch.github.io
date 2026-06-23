@@ -616,3 +616,25 @@ html[data-theme="dark"] {
   padding: 0;
   border-radius: 12px;
 }
+
+/* Mode-aware USC accents:
+   - frame edges: Gold in light, dark Cardinal in dark
+   - header/footer bar text: Cardinal in light, Gold in dark */
+:root, html[data-theme="light"] {
+  --frame-color: #FFCC00;     /* gold */
+  --bar-text-color: #990000;  /* cardinal */
+}
+html[data-theme="dark"] {
+  --frame-color: #990000;     /* dark cardinal */
+  --bar-text-color: #FFCC00;  /* gold */
+}
+
+.author__avatar img,
+.page__content .list__item,
+.paper-abstract,
+.paper-figure { border-color: var(--frame-color); }
+
+.site-header .masthead a,
+.page__footer,
+.page__footer a,
+.footer-credit { color: var(--bar-text-color); }
