@@ -7,6 +7,8 @@ date: 2026-06-01
 status: "Under review"
 excerpt: 'with [Erin Kelley](https://www.erinmunrokelley.com/) and [Gregory Lane](http://www.gregoryvlane.com/)'
 link: "https://www.dropbox.com/scl/fi/ecx5sek12faz0r9u9r0do/matatu_drivers_web.pdf?rlkey=8g61f4i1q7cu6b96xp6ptcvax&dl=0"
+htmlurl: /papers/matatu-drivers.html
+briefurl: /briefs/matatu-drivers.html
 figure: /images/papers/safer-driving.png
 note: "The bars give the incentive scheme's main treatment effects in levels on the safety index, daily safety alerts, and speed; treated minibuses score safer overall, with speeding down 29 percent and harsh braking down 13 percent."
 ---

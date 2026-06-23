@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Policy Brief — Safer Driving for a Price</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;0,700;1,400&family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#222;--cardinal:#990000;--gold:#e8b800;--muted:#555;--rule:#e2e2e2;}
+html{font-size:18px;}
+body{font-family:"Archivo",-apple-system,Arial,sans-serif;color:var(--ink);line-height:1.55;
+  max-width:760px;margin:0 auto;padding:2.6rem 1.2rem 4rem;}
+h1,h2{font-family:"Libre Caslon Text",Georgia,serif;}
+.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:.74rem;font-weight:700;color:var(--cardinal);margin:0 0 .35rem;}
+h1{font-size:1.7rem;line-height:1.2;margin:0 0 .35rem;}
+.byline{color:var(--muted);font-size:.95rem;margin:0 0 1.1rem;}
+.lede{font-size:1.08rem;background:#faf7f2;border-left:4px solid var(--cardinal);padding:.8rem 1rem;border-radius:0 8px 8px 0;margin:0 0 1.6rem;}
+h2{font-size:1.12rem;margin:1.7rem 0 .5rem;}
+a{color:var(--cardinal);text-decoration:none;} a:hover{text-decoration:underline;}
+ul{padding-left:1.1rem;} li{margin-bottom:.45rem;}
+.stat-row{display:flex;flex-wrap:wrap;gap:.7rem;margin:1rem 0 .3rem;}
+.stat{flex:1 1 150px;background:#fff;border:1px solid var(--rule);border-radius:10px;padding:.7rem .9rem;text-align:center;}
+.stat .n{font-family:"Libre Caslon Text",Georgia,serif;font-size:1.5rem;color:var(--cardinal);line-height:1.1;}
+.stat .l{font-size:.78rem;color:var(--muted);margin-top:.2rem;}
+.foot{border-top:1px solid var(--rule);margin-top:2.2rem;padding-top:.9rem;font-size:.9rem;color:var(--muted);}
+</style>
+</head>
+<body>
+<p class="kicker">Policy Brief</p>
+<h1>Safer Driving for a Price: paying minibus drivers to drive safely</h1>
+<p class="byline">David Schönholzer, Gregory Lane, and Erin Kelley · randomized controlled trial, Nairobi, Kenya</p>
+
+<p class="lede">Where traffic laws go largely unenforced, paying drivers directly for safer driving — using the GPS trackers already in most commercial vehicles — measurably reduces dangerous driving at no cost to drivers' earnings. The catch: the gains fade once the payments stop.</p>
+
+<h2>The problem</h2>
+<p>Road traffic injuries are the leading cause of death for people aged 5–29, and low- and middle-income countries bear 92% of road fatalities while owning only 60% of the world's vehicles. In Nairobi, minibuses ("matatus") are involved in a disproportionate share of crashes: drivers are residual claimants who profit from every extra passenger, so they have strong incentives to speed and maneuver aggressively. Conventional regulation depends on enforcement capacity that is often absent.</p>
+
+<h2>The intervention</h2>
+<p>In an RCT with 203 minibuses (77 treated, 126 control), treated drivers began each day with a 600 KES bonus — about 60% of average daily earnings — from which we deducted penalties for unsafe driving recorded by an in-vehicle GPS tracker (speeding, hard braking, sharp turns, over-acceleration). Crucially, each driver was scored against <em>their own</em> baseline, not against other drivers, and no driver could end up worse off than without the scheme. Drivers received a nightly SMS reporting what they earned or lost.</p>
+
+<h2>What we found</h2>
+<div class="stat-row">
+  <div class="stat"><div class="n">−29%</div><div class="l">speeding alerts</div></div>
+  <div class="stat"><div class="n">−13%</div><div class="l">hard braking</div></div>
+  <div class="stat"><div class="n">+0.10σ</div><div class="l">composite safety index</div></div>
+  <div class="stat"><div class="n">≈0</div><div class="l">change in earnings</div></div>
+</div>
+<ul>
+  <li><strong>Incentives work even with weak enforcement.</strong> Pricing unsafe driving cut speeding by 29% and harsh braking by 13%, improving a composite safety index by 0.096 standard deviations.</li>
+  <li><strong>No measurable cost to drivers.</strong> Revenue and take-home pay were essentially unchanged; drivers worked modestly longer (about 43 minutes, 6.8%) to protect earnings.</li>
+  <li><strong>No gaming of the system.</strong> Granular 30-second tracker data show no shift of unsafe driving to nighttime, off-route, or out-of-metro periods — the safety gains are genuine, not displaced.</li>
+  <li><strong>But the gains are not self-sustaining.</strong> Safety reverts toward baseline once payments end. A longer (two-month) exposure cushions the reversal in speeding, but improvements still fade — evidence of only modest habit formation.</li>
+  <li><strong>Plausibly cost-effective.</strong> The scheme would need to avert roughly 0.5–1.1 accidents to break even; the point estimate is about 1.9 accidents averted, before counting non-fatal injuries and property damage.</li>
+</ul>
+
+<h2>Policy implications</h2>
+<ul>
+  <li><strong>A deployable lever for weak-enforcement settings.</strong> The approach needs no new infrastructure — it runs on the telematics insurers and fleet owners already install — so insurers, fleet owners, transport authorities, or police could operate it.</li>
+  <li><strong>Benchmark against each driver's own history.</strong> Scoring drivers against their own baseline is fairer and rewards improvement on the margin each driver can actually move.</li>
+  <li><strong>Treat it as a standing contract, not a one-off campaign.</strong> Because behavior reverts when pricing stops, durable safety gains require keeping unsafe driving priced on a continuing basis rather than running a temporary push.</li>
+  <li><strong>Target the most dangerous routes first.</strong> Given finite budgets, continuous pay-for-safety contracts are most valuable on the highest-risk, least-enforced routes.</li>
+</ul>
+
+<p class="foot">Based on "Safer Driving for a Price: Evidence on Behavior and Habits in Kenyan Minibuses."
+Read the <a href="/papers/matatu-drivers.html">HTML version</a> or the
+<a href="https://www.dropbox.com/scl/fi/ecx5sek12faz0r9u9r0do/matatu_drivers_web.pdf?rlkey=8g61f4i1q7cu6b96xp6ptcvax&dl=0">full paper (PDF)</a>.
+&nbsp;·&nbsp; <a href="/">David Schönholzer</a></p>
+</body>
+</html>
