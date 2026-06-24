@@ -744,3 +744,10 @@ html[data-theme="dark"] .page__content .list__item { background: #555555; }  /* 
   font-weight: 400;
 }
 .paper-links-dot { color: #999; margin: 0 0.5em; font-weight: 400; }
+
+/* The header name is the home link — keep it clickable even on the home page,
+   where the theme marks it "selected" and sets pointer-events:none. */
+.site-header .masthead__menu-item--lg.selected a {
+  pointer-events: auto;
+  cursor: pointer;
+}
