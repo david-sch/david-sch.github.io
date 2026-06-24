@@ -17,7 +17,7 @@ layout: compress
 
     <div class="site-header">
       <div class="site-banner">
-        <img src="{{ base_path }}/images/leviathan_banner.jpg" alt="Detail from the frontispiece of Leviathan by Thomas Hobbes">
+        <img src="{{ base_path }}/images/leviathan_banner.jpg?v={{ site.time | date: '%s' }}" alt="Detail from the frontispiece of Leviathan by Thomas Hobbes">
       </div>
       {% include masthead.html %}
     </div>
