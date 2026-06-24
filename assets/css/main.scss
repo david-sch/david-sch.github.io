@@ -493,8 +493,9 @@
   .sidebar { top: 116px; height: calc(100vh - 116px); }
 }
 
-/* Nudge the header engraving crop up so the king's eyes aren't cut off */
-.site-banner img { object-position: center 30%; }
+/* Frame the header band on the crowned head (crown down to the nose) so it meets
+   the footer slice, which picks up at the beard/neck. */
+.site-banner img { object-position: center 38%; }
 
 /* Bigger header-bar font, ~matching the section titles */
 .site-header .masthead__menu-item a { font-size: 1.4em; }
@@ -766,11 +767,12 @@ html[data-theme="dark"] .page__content .list__item { background: #555555; }  /* 
 .pub-section.collapsed .list__item { display: none; }
 
 /* Footer frontispiece spans edge to edge like the header banner. Lock the footer
-   to the engraving's own aspect ratio (1100x685) so object-fit:cover fills the full
-   width with no side gaps AND shows the whole image (matching aspect = no crop):
-   the Leviathan's body, the hills, and the town all stay visible. */
+   to the engraving slice's own aspect ratio (1930x1250) so object-fit:cover fills
+   the full width with no side gaps AND shows the whole slice (matching aspect = no
+   crop). The slice is cut from the same original as the header and starts a little
+   above the neck, so it continues seamlessly from the head shown in the header. */
 .page__footer {
-  aspect-ratio: 1100 / 685;
+  aspect-ratio: 1930 / 1250;
   min-height: 0;
 }
 .footer-frontispiece img {
