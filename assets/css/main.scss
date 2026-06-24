@@ -751,3 +751,27 @@ html[data-theme="dark"] .page__content .list__item { background: #555555; }  /* 
   pointer-events: auto;
   cursor: pointer;
 }
+
+/* Collapsible publication sections: the section heading is a fold/expand toggle.
+   Default = expanded = up-caret (⋀); collapsed = down-caret (⋁) swapped in by JS. */
+.pub-head { cursor: pointer; user-select: none; }
+.pub-head .sec-arrow {
+  display: inline-block;
+  font-size: 0.62em;
+  vertical-align: middle;
+  color: #999;
+  transition: color 0.15s;
+}
+.pub-head:hover .sec-arrow { color: var(--global-link-color, #0066cc); }
+.pub-section.collapsed .list__item { display: none; }
+
+/* Taller footer frontispiece: show the whole Leviathan body + the town below it.
+   The frontispiece is an absolute full-cover background of the footer (see above),
+   so the footer's own height controls how much of the engraving is revealed. A tall
+   min-height + object-fit:contain shows the entire 1100x685 image, centered. */
+.page__footer { min-height: 360px; }
+.footer-frontispiece img {
+  object-fit: contain;
+  object-position: center;
+  opacity: 0.22;
+}

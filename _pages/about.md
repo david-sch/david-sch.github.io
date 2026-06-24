@@ -22,7 +22,7 @@ USC Department of Economics, [Kaprielian Hall Office 306C, 3620 S Vermont Ave, L
 <span id="research"></span>
 
 {% for category in site.publication_category %}<section class="pub-section pub-{{ category[0] }}">
-<h3>{{ category[1].title }}</h3>
+<h3 class="pub-head">{{ category[1].title }} <span class="sec-arrow">&#8896;</span></h3>
 {% for post in site.publications reversed %}{% if post.category == category[0] %}{% include archive-single.html %}{% endif %}{% endfor %}
 </section>
 {% endfor %}

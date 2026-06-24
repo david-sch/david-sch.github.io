@@ -55,4 +55,18 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
+<!-- Fold/expand whole publication sections via the section heading -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.pub-head').forEach(function (h) {
+    h.addEventListener('click', function () {
+      var section = h.closest('.pub-section');
+      var arrow = h.querySelector('.sec-arrow');
+      var collapsed = section.classList.toggle('collapsed');
+      if (arrow) arrow.innerHTML = collapsed ? '&#8897;' : '&#8896;';
+    });
+  });
+});
+</script>
+
 <!-- end custom footer snippets -->
