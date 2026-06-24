@@ -8,7 +8,7 @@ excerpt: 'with [Erin Kelley](https://www.erinmunrokelley.com/) and [Gregory Lane
 link: "https://www.dropbox.com/scl/fi/sxr1cxqyv5xk9vzxtlsq2/matatu_safety.pdf?rlkey=j5ncbdw1o1kc6sqqacasl8efj&dl=0"
 htmlurl: /papers/lemon-markets.html
 figure: /images/papers/lemon-markets.png
-note: "The figure reproduces the safety-information card shown to passengers, the paper's core intervention: it discloses each route's safety record to riders to shift demand toward safer operators."
+note: "The figure reproduces the safety-information pamphlet handed privately to individual passengers, flagging the route's top safety performer. On its own this private disclosure did not move passenger choice; demand shifted toward the safest firm only once the tracking effort was advertised publicly with large banners."
 note_col: abs
 ---
 

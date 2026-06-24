@@ -8,7 +8,7 @@ status: "Conditionally accepted at the **American Economic Journal: Economic Pol
 excerpt: 'with [Jamie McCasland](https://sites.google.com/site/jamiemccasland/), [Tomas Monarrez](https://sites.google.com/site/tmonarrez/), and [Everett Stamm](https://www.linkedin.com/in/everett-stamm/)'
 link: "https://www.dropbox.com/scl/fi/23niwjvwgh62sn74m7ui9/LocGovFrag_May2026_AEJ.pdf?rlkey=msv2zd8hav87gw3vvsydo63yy&dl=0"
 figure: /images/papers/shattered.png
-note: "The panels lay out the empirical design across two metros: municipal fragmentation, pre-existing migration links to the South, and the divergence in Black population share and jurisdictional fragmentation, showing how the Great Migration fragmented metropolitan government."
+note: "Using two contrasting metros (Cleveland and Columbus, OH), the panels illustrate the paper's argument: municipalities shaded by share White, the pre-existing migration links from Southern origin counties to each city, and the resulting divergence in urban Black share and in jurisdiction counts, illustrating how the Great Migration drove metropolitan fragmentation."
 note_col: abs
 ---
 
