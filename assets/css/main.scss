@@ -712,7 +712,7 @@ html[data-theme="dark"] .usc-seal-emblem { background-color: #FFCC00; }
    So sidebar top = main margin-top + 10 -> both gaps land at ~10px. */
 @media screen and (min-width: 1024px) {
   #main { margin-top: 110px; }
-  .sidebar { top: 120px; height: calc(100vh - 120px); }
+  .sidebar { top: 116px; height: calc(100vh - 116px); }
 }
 
 /* All fonts a bit smaller (mobile a touch smaller still) */
