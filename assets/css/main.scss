@@ -757,21 +757,24 @@ html[data-theme="dark"] .page__content .list__item { background: #555555; }  /* 
 .pub-head { cursor: pointer; user-select: none; }
 .pub-head .sec-arrow {
   display: inline-block;
-  font-size: 0.62em;
-  vertical-align: middle;
+  font-size: 1em;
+  vertical-align: baseline;
   color: #999;
   transition: color 0.15s;
 }
 .pub-head:hover .sec-arrow { color: var(--global-link-color, #0066cc); }
 .pub-section.collapsed .list__item { display: none; }
 
-/* Taller footer frontispiece: show the whole Leviathan body + the town below it.
-   The frontispiece is an absolute full-cover background of the footer (see above),
-   so the footer's own height controls how much of the engraving is revealed. A tall
-   min-height + object-fit:contain shows the entire 1100x685 image, centered. */
-.page__footer { min-height: 360px; }
+/* Footer frontispiece spans edge to edge like the header banner. Lock the footer
+   to the engraving's own aspect ratio (1100x685) so object-fit:cover fills the full
+   width with no side gaps AND shows the whole image (matching aspect = no crop):
+   the Leviathan's body, the hills, and the town all stay visible. */
+.page__footer {
+  aspect-ratio: 1100 / 685;
+  min-height: 0;
+}
 .footer-frontispiece img {
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
   opacity: 0.22;
 }
