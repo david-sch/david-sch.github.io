@@ -12,7 +12,7 @@ redirect_from:
 
 My work lies primarily in public economics and political economy, with further interests in development, urban, and history. I frequently combine big spatial data with both reduced-form and structural microeconomic methods.
 
-I am an Assistant Professor in the [Economics Department](https://dornsife.usc.edu/econ/) at the [University of Southern California](https://www.usc.edu/). I am also a member of [NBER](https://www.nber.org/people/david_schonholzer_1), [CESifo](https://www.ifo.de/en/cesifo/network-member/schonholzer-david), and [CEGA](https://cega.berkeley.edu/person/david-schonholzer/). I completed my PhD in Economics at UC Berkeley in 2018. My [CV]({{ base_path }}/files/DavidSchonholzerCV.pdf) is here.
+I am an Assistant Professor in the [Economics Department](https://dornsife.usc.edu/econ/) at the [University of Southern California](https://www.usc.edu/). I am also an affiliate of [NBER](https://www.nber.org/people/david_schonholzer_1), [CESifo](https://www.ifo.de/en/cesifo/network-member/schonholzer-david), and [CEGA](https://cega.berkeley.edu/person/david-schonholzer/). I completed my PhD in Economics at UC Berkeley in 2018. My [CV]({{ base_path }}/files/DavidSchonholzerCV.pdf) is here.
 
 **Contact:** [dschonho@usc.edu](mailto:dschonho@usc.edu)<br>
 USC Department of Economics, [Kaprielian Hall Office 306C, 3620 S Vermont Ave, Los Angeles, CA 90089](https://www.google.com/maps/search/?api=1&query=Kaprielian+Hall+USC+3620+S+Vermont+Ave+Los+Angeles)
