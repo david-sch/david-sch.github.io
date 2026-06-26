@@ -722,10 +722,10 @@ html[data-theme="dark"] .usc-seal-emblem { background-color: #FFCC00; }
   }
 }
 
-/* Dark mode: header underline and footer top line in the darkest cardinal
-   tone instead of the theme's gray border colors. */
-html[data-theme="dark"] .site-header { border-bottom-color: mix(#000, $cardinal-deep, 35%); }
-html[data-theme="dark"] .page__footer { border-top-color: mix(#000, $cardinal-deep, 35%); }
+/* Line-less transition: no border under the masthead or above the footer
+   banner (matches the already-borderless look in both themes). */
+.site-header { border-bottom: none; }
+.page__footer { border-top: none; }
 
 /* Mobile: drop the large floated intro emblem and instead show a small USC seal
    inline next to the "Assistant Professor of Economics" bio line. */
