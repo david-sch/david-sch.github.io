@@ -711,6 +711,22 @@ html[data-theme="dark"]         { --frame-color: #{$cardinal-deep}; }  /* deep c
 }
 html[data-theme="dark"] .usc-seal-emblem { background-color: #FFCC00; }
 
+/* Desktop: match the decal's height to the author photo. Sidebar is 200px wide
+   and the avatar img is border-box with a 2px frame, so its outer height is
+   (200 - 4) * 263/223 + 4. Width follows the USC seal's 500x514 aspect. */
+@media screen and (min-width: 1024px) {
+  .usc-seal-emblem {
+    height: calc((200px - 4px) * 263 / 223 + 4px);
+    width: auto;
+    aspect-ratio: 500 / 514;
+  }
+}
+
+/* Dark mode: header underline and footer top line in the darkest cardinal
+   tone instead of the theme's gray border colors. */
+html[data-theme="dark"] .site-header { border-bottom-color: mix(#000, $cardinal-deep, 35%); }
+html[data-theme="dark"] .page__footer { border-top-color: mix(#000, $cardinal-deep, 35%); }
+
 /* Mobile: drop the large floated intro emblem and instead show a small USC seal
    inline next to the "Assistant Professor of Economics" bio line. */
 .usc-seal-inline { display: none; }
