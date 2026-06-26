@@ -42,12 +42,14 @@ document.addEventListener('DOMContentLoaded', function () {
       if (panel.hasAttribute('hidden')) {
         panel.removeAttribute('hidden');
         btn.setAttribute('aria-expanded', 'true');
-        btn.childNodes[0].nodeValue = 'See less ';
+        btn.setAttribute('aria-label', 'Hide paper details');
+        btn.setAttribute('title', 'Hide details');
         if (arrow) arrow.innerHTML = '&#8896;';
       } else {
         panel.setAttribute('hidden', '');
         btn.setAttribute('aria-expanded', 'false');
-        btn.childNodes[0].nodeValue = 'See more ';
+        btn.setAttribute('aria-label', 'Show paper details');
+        btn.setAttribute('title', 'Show details');
         if (arrow) arrow.innerHTML = '&#8897;';
       }
     });

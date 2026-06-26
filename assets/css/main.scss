@@ -512,18 +512,25 @@
    only the link itself underlines (blue) on direct hover */
 .page__content .archive__item:hover .archive__item-title { text-decoration: none; }
 
-/* "See more" — expandable figure + abstract per paper */
+/* Expand/collapse caret — top-right corner of each paper card */
+.page__content .list__item { position: relative; }
 .see-more {
+  position: absolute;
+  top: 0.25em;
+  right: 0.55em;
+  z-index: 1;
   background: none;
   border: none;
   color: var(--global-link-color);
   cursor: pointer;
-  padding: 0.45em 0 0;
-  font-size: 0.95em;
+  padding: 0 0.15em;
+  line-height: 1;
   font-family: inherit;
 }
-.see-more:hover { text-decoration: underline; }
-.see-more-arrow { font-size: 0.85em; }
+.see-more:hover { color: var(--global-link-color-hover); }
+.see-more-arrow { font-size: 1.8em; line-height: 1; vertical-align: top; }
+/* keep the paper title clear of the caret */
+.page__content .list__item .archive__item-title { padding-right: 1.4em; }
 
 .paper-expand {
   display: flex;
@@ -549,8 +556,7 @@
   .paper-figure { flex-basis: auto; max-width: 100%; }
 }
 
-/* See-more refinements: figure column + note, framed abstract, baseline arrow */
-.see-more-arrow { font-size: 1em; vertical-align: baseline; }
+/* See-more refinements: figure column + note, framed abstract */
 
 .paper-figcol { flex: 0 0 44%; max-width: 44%; }
 .paper-figcol .paper-figure {
