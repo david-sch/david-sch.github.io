@@ -821,5 +821,16 @@ html[data-theme="dark"] .page__content .list__item {
 .footer-frontispiece img {
   object-fit: cover;
   object-position: center;
-  opacity: 0.22;
+  opacity: 0.18;            /* match the header banner opacity */
+  filter: brightness(1.16); /* match header image brightness (footer L=145 vs header L=169) */
+}
+
+/* Anchor the footer text (image credit, GitHub/feed, copyright) to the bottom
+   of the footer, over the landscape, so it clears the Leviathan's figure. */
+.page__footer > footer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 1.6em;
 }
