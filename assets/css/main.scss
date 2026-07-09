@@ -81,6 +81,13 @@
   margin: 0 0 0.15em;
 }
 
+/* Slightly smaller paper titles on mobile */
+@media screen and (max-width: 1023px) {
+  .page__content .archive__item .archive__item-title {
+    font-size: 1.0em;
+  }
+}
+
 /* Status / venue / co-author lines: hug the title above, normal body size */
 .page__content .archive__item p {
   font-size: $type-size-5;
@@ -823,6 +830,26 @@ html[data-theme="dark"] .page__content .list__item {
   object-position: center;
   opacity: 0.18;            /* match the header banner opacity */
   filter: brightness(1.16); /* match header image brightness (footer L=145 vs header L=169) */
+}
+
+/* Dark mode banners: engraving as a true Cardinal duotone. Alpha-blending the
+   greyscale engraving into the page bg washed its light areas out to a greyish
+   ~#422222 that matched nothing. Multiply it onto the paper-box cardinal
+   instead: sky/paper areas render exactly $cardinal (same as the cards), ink
+   lines shade toward the deeper page cardinal. brightness(1.08) lifts the
+   engraving's paper white point (~240) to true white so the sky hits $cardinal
+   exactly; opacity keeps the linework faint. isolation confines the blend to
+   the banner's own background. */
+html[data-theme="dark"] .site-banner,
+html[data-theme="dark"] .footer-frontispiece {
+  background: $cardinal;
+  isolation: isolate;
+}
+html[data-theme="dark"] .site-banner img,
+html[data-theme="dark"] .footer-frontispiece img {
+  mix-blend-mode: multiply;
+  filter: brightness(1.08);
+  opacity: 0.5;
 }
 
 /* Anchor the footer text (image credit, GitHub/feed, copyright) to the bottom
