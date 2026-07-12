@@ -861,3 +861,10 @@ html[data-theme="dark"] .footer-frontispiece img {
   justify-content: flex-end;
   padding: 0 0 0.7em;
 }
+
+/* ==========================================================================
+   Profile photo: circular medallion (mirrors the USC seal opposite), natural
+   backdrop gently neutralized (original luminance kept, color cast removed).
+   Sized to visually match the USC seal emblem, centered.
+   ========================================================================== */
+.author__avatar img { max-width: 250px; margin: 0 auto; border-radius: 50%; }
