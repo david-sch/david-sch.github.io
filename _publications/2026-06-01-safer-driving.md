@@ -5,6 +5,9 @@ category: workingpapers
 permalink: /publication/safer-driving
 date: 2026-06-01
 excerpt: 'with [Erin Kelley](https://www.erinmunrokelley.com/) and [Gregory Lane](http://www.gregoryvlane.com/)'
+supplement: |
+  - [NBER Working Paper 35394](https://www.nber.org/papers/w35394), featured on the NBER home page in July 2026
+  - Media coverage: [Driving You Crazy (Denver7)](https://podcasts.apple.com/us/podcast/406-would-you-drive-better-if-you-were-paid-to-drive-better/id1171896062?i=1000780108809)
 link: "https://www.dropbox.com/scl/fi/ecx5sek12faz0r9u9r0do/matatu_drivers_web.pdf?rlkey=8g61f4i1q7cu6b96xp6ptcvax&dl=0"
 htmlurl: /papers/matatu-drivers.html
 briefurl: /briefs/matatu-drivers.html
