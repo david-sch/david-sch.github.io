@@ -54,13 +54,21 @@
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
 
-    {% if post.supplement %}
-    <div class="archive__item-supplement">{{ post.supplement | markdownify }}</div>
-    {% endif %}
+    {% comment %}
+      Only the title, co-authors (excerpt) and venue/status stay visible.
+      Everything else (figure, abstract, PDF/HTML links, supplement bullets such as
+      appendix / replication / media coverage, citation) sits behind the caret.
+    {% endcomment %}
+    {% assign pdf_url = post.paperurl | default: post.link %}
+    {% assign has_links = false %}
+    {% unless post.category == 'progress' %}{% if pdf_url or post.htmlurl or post.briefurl %}{% assign has_links = true %}{% endif %}{% endunless %}
+    {% assign has_expand = false %}
+    {% if post.figure or post.supplement or has_links or post.citation or post.slidesurl or post.bibtexurl %}{% assign has_expand = true %}{% endif %}
 
-    {% if post.figure %}
+    {% if has_expand %}
     <button type="button" class="see-more" aria-expanded="false" aria-label="Show paper details" title="Show details"><span class="see-more-arrow" aria-hidden="true">&#8897;</span></button>
     <div class="paper-expand" hidden>
+      {% if post.figure %}
       <div class="paper-expand-row">
         <div class="paper-figcol">
           <img class="paper-figure" src="{{ post.figure | relative_url }}" alt="Figure from {{ title }}" loading="lazy">
@@ -70,19 +78,18 @@
           <div class="paper-abstract">{{ post.content }}</div>
         </div>
       </div>
-      {% unless post.category == 'progress' %}
-      {% assign pdf_url = post.paperurl | default: post.link %}
-      {% if pdf_url or post.htmlurl or post.briefurl %}
+      {% endif %}
+      {% if has_links %}
+      {% assign sep = false %}
       <p class="paper-links">
         {% if pdf_url %}<a href="{{ pdf_url }}">PDF</a>{% assign sep = true %}{% endif %}
         {% if post.htmlurl %}{% if sep %}<span class="paper-links-dot">&bull;</span>{% endif %}<a href="{{ post.htmlurl | relative_url }}">HTML</a>{% assign sep = true %}{% endif %}
         {% if post.briefurl %}{% if sep %}<span class="paper-links-dot">&bull;</span>{% endif %}<a href="{{ post.briefurl | relative_url }}">Policy brief</a>{% endif %}
       </p>
       {% endif %}
-      {% endunless %}
-    </div>
-    {% endif %}
-
+      {% if post.supplement %}
+      <div class="archive__item-supplement">{{ post.supplement | markdownify }}</div>
+      {% endif %}
     {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.citation and post.paperurl and post.slidesurl %}
@@ -109,6 +116,8 @@
       <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% elsif post.bibtexurl %}
       <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+    {% endif %}
+    </div>
     {% endif %}
 
   </article>
