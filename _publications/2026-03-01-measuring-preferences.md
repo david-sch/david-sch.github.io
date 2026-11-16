@@ -4,10 +4,9 @@ collection: publications
 category: workingpapers
 permalink: /publication/measuring-preferences
 date: 2026-03-01
-status: "Revision requested at the **American Economic Journal: Economic Policy**"
+status: "Resubmitted to the **American Economic Journal: Economic Policy**"
 excerpt: ""
 link: "https://www.dropbox.com/scl/fi/k52a7g6q1j3praiq8slb2/LocGovCap_web.pdf?rlkey=842s8tlxaxvvgz026vnlhy9fg&dl=0"
-htmlurl: /papers/measuring-preferences.html
 figure: /images/papers/measuring-preferences.png
 note: "The figure shows local-government boundaries around San Jose linked into a network of boundary discontinuities; this connected structure is what the paper exploits to recover residents' willingness to pay for local public goods."
 ---
